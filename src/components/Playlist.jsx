@@ -4,7 +4,7 @@ export default function Playlist() {
   const playlistTracks = [];
 
   const handleRemoveTrack = () => {
-    // remove Track logic here
+    // Remove track logic will go here
   };
 
   return (
@@ -39,7 +39,7 @@ export default function Playlist() {
           className="btn w-100 rounded-pill fw-semibold py-3 px-4 text-white"
           style={{backgroundColor: '#4f46e5'}}
           onClick={() => {
-            // save playlist in localStorage here
+            // Save playlist logic will go here
           }}
         >
           Save to Spotify
