@@ -1,0 +1,41 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Custom styles for track hover effects */
+.track-item:hover {
+  background-color: rgba(79, 70, 229, 0.3) !important;
+}
+
+.track-item:hover .track-name {
+  color: #818cf8 !important;
+}
+
+.track-button {
+  opacity: 1;
+}
+
+.track-item:hover .track-button:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Input focus styles */
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: white !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.form-control::placeholder {
+  color: #9ca3af !important;
+}

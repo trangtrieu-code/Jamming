@@ -1,0 +1,40 @@
+Jamming app requests Spotify API to build a website that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account
+
+Project Requirements
+- Build a web app using React
+- Version control your application with Git and host the repository on GitHub
+- Integrate with Spotify or another API
+- Deploy your application
+- Write a README (using Markdown) that documents your project, including:
+  - The purpose of your project
+  - Technologies used
+  - Features
+  - Future work
+
+
+- More specific, the website must have
+  1. Authentication with Spotify
+    - User Spotify OAuth
+    - Get an access token
+    - Understand that tokens expire and website must be able to handle that
+  2. Search the Spotify library
+    - User types a search term
+    - App called Spotify's Search API
+    - Receive tracks (id, name, artist, album, uri)
+  3. Build a custom playlist (client-side first)
+    - Add tracks from search results to a playlist
+    - Prevent duplicates
+    - Remove tracks from the playlist
+    - Rename the playlist
+  4. Save the playlist to the user's Spotify account
+    - Get the user's Spotify user id
+    - Create a new playlist via Spotify API
+    - Add tracks to that playlist using their URIs
+
+
+  Features:
+- Users can search for songs by song title.
+    - You can also include functionality to search by other    attributes like artist’s name, genre, etc.
+- Users can see information about each song like title, artist, and album for songs they queried
+  - You can also include other information – the design is up to you
+- Users can export their custom playlist to their personal Spotify account
