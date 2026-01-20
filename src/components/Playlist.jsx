@@ -1,11 +1,6 @@
 import Tracklist from './Tracklist.jsx';
 
-export default function Playlist() {
-  const playlistTracks = [];
-
-  const handleRemoveTrack = () => {
-    // Remove track logic will go here
-  };
+export default function Playlist({playlistTracks, playlistName, onRemove}) {
 
   return (
     <div className="mt-4">
@@ -16,6 +11,7 @@ export default function Playlist() {
           placeholder="New Playlist"
           className="form-control border-0"
           style={{backgroundColor: 'rgba(255,255,255,0.1)', color: 'white', fontSize: '1.5rem', fontWeight: 'bold'}}
+          value={playlistName}
         />
       </div>
 
@@ -29,6 +25,7 @@ export default function Playlist() {
         <Tracklist 
           tracks={playlistTracks} 
           onAdd={handleRemoveTrack}
+          onRemove={onRemove}
           buttonLabel="−"
         />
       )}
